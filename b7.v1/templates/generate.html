@@ -1,0 +1,11 @@
+<html>
+<head>
+<title>Image Generator</title>
+</head>
+<body>
+<h1>Image Generator</h1>
+<p>Here is your generated image:</p>
+<img src="{{ url_for('static', filename=image_file) }}" alt="Generated Image">
+<a href="{{ url_for('download', filename=image_file) }}">Download Image</a>
+</body>
+</html>
